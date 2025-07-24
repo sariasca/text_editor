@@ -1,0 +1,17 @@
+.tiptap{
+    width: 80vw;
+    max-width: 1000px;
+    height: 90vh;
+    overflow: auto;
+    margin: 40px auto;
+    margin-top: 80px;
+    padding: 20px;
+    background: #FFFFFF;
+    border-radius: 5px;
+    min-height: 50vh;
+    z-index: 0;  
+    &:focus {
+        outline: 2px solid #4A90E2;
+    }
+
+}
