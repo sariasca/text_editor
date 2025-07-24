@@ -1,6 +1,7 @@
 import { useEditor, EditorContent } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import './Tiptap.css';
+import Toolbar from './Toolbar';
 
 const Tiptap = () => {
   const editor = useEditor({
@@ -11,7 +12,12 @@ const Tiptap = () => {
   });
 
   return (
-    <EditorContent editor={editor} />
+    <>
+      <Toolbar/>
+      <main>
+        <EditorContent editor={editor} />
+      </main>
+    </>
   );
 };
 
