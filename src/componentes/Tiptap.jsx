@@ -2,7 +2,6 @@ import { useEditor, EditorContent, useEditorState } from '@tiptap/react';
 import StarterKit from '@tiptap/starter-kit';
 import Image from '@tiptap/extension-image';
 import Toolbar from './Toolbar';
-
 import './Tiptap.css';
 
 const Tiptap = () => {
@@ -10,14 +9,15 @@ const Tiptap = () => {
     extensions: [
       StarterKit.configure({ 
         link: {
-          autolink: true, // Automatically converts URLs to links
+          autolink: true, // Automaticamente convertir URLs en enlaces
         }
       }),
       Image,
     ],
-    content: 'Hello World!',
+    content: '',
   });
 
+  // Comprueba si alguna de las funciones del editor está activa
   const editorState = useEditorState({
     editor,
     selector: (context) => {
@@ -62,9 +62,11 @@ const comandos = {
   },
 }
 
+
+
   return (
     <>
-      <Toolbar comandos={comandos} editorState={editorState} />
+      <Toolbar comandos={comandos} editorState={editorState} editor={editor} />
       <main>
         <EditorContent editor={editor} />
       </main>

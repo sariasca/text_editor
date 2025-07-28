@@ -1,6 +1,8 @@
 import './Toolbar.css';
+//Boton para exportar a PDF
+import ExportPDFButton from './ExportPDFButton';
 
-const Toolbar = ({ comandos, editorState }) => {
+const Toolbar = ({ editor, comandos, editorState }) => {
 	return (
 		<>
 			<nav className="toolbar">
@@ -67,9 +69,7 @@ const Toolbar = ({ comandos, editorState }) => {
 					</button>
 				</div>
 				<div className="right">
-					<button>
-						<span>Guardar PDF</span>
-					</button>
+					<ExportPDFButton editor={editor} />
 				</div>
 			</nav>
 		</>

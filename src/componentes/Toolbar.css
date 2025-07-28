@@ -37,14 +37,6 @@
 				color: #fff;
 			}
 		}
-
-		.btnGuardar {
-			background: #0e8eff;
-			color: #fff;
-
-			&:hover {
-				background: #007ae6;
-			}
-		}
+	
 	}
 }
