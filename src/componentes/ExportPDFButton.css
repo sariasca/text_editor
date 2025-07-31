@@ -1,0 +1,83 @@
+/* Contenedor principal (flex) */
+.export-pdf-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0;
+  transition: all 0.3s ease;
+}
+
+.export-pdf-container.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+/* Input para el nombre del archivo */
+.filename-input {
+  border: 1px solid #d1d5db;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 200px;
+  outline: none;
+}
+
+.filename-input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 1px #3b82f6;
+}
+
+/* Boton 'Exportar PDF' */
+.toolbar .right .export-pdf-container .btnGuardar {
+  background: #d15555d6;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.toolbar .right .export-pdf-container .btnGuardar:hover {
+  background: #e02121;
+}
+
+.toolbar .right .export-pdf-container .btnGuardar:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+/* Botón "OK" (alternativo) */
+.toolbar .right .export-pdf-container .confirm-button {
+  background: #d15555d6;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s;
+}
+
+.toolbar .right .export-pdf-container .confirm-button:hover {
+  background: #e02121;
+}
+
+/* Botón "Back" */
+.toolbar .right .export-pdf-container .back-button {
+  background: #9ca3af;
+  color: #fff;
+  padding: 0.5rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.toolbar .right .export-pdf-container .back-button:hover {
+  background: #6b7280;
+}
