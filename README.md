@@ -29,7 +29,7 @@ Esto ocurre si la imagen proviene de un servidor que no permite su uso externo.
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/TU_USUARIO/nombre-proyecto.git
+   git clone https://github.com/sariasca/text_editor.git
    npm install
    npm run dev
 
