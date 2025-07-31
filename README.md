@@ -4,6 +4,9 @@ Un editor de texto minimalista basado en **Tiptap**, con soporte para exportaci�
 
 Para probarlo puedes hacerlo desde el siguiente <a href="https://editordetextosimple.netlify.app/">enlace</a>.
 
+## Vista previa
+<img src="./assets/preview_editor.png" alt="Vista previa del editor" width="600" />
+
 ## ✨ Características
 
 - Edición de texto enriquecido (negrita, cursiva, encabezados, listas, etc.).
