@@ -1,5 +1,6 @@
+import Tiptap from "./componentes/Tiptap";
 function App() {
-	return <h1>Editor TipTap</h1>;
+	return <Tiptap />;
 }
 
 export default App;
